@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support Silas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin:0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #00d4ff, #0072ff);
+      color:#fff;
+      text-align:center;
+      overflow:hidden;
+    }
+    h1 {
+      font-size:3rem;
+      margin-top:50px;
+      animation:fadeInDown 1s;
+    }
+    p {
+      font-size:1.2rem;
+      max-width:700px;
+      margin:20px auto 40px auto;
+      line-height:1.6;
+      animation:fadeIn 1.5s;
+    }
+    .buttons a {
+      padding:15px 35px;
+      font-weight:bold;
+      font-size:1.1rem;
+      border-radius:50px;
+      text-decoration:none;
+      display:inline-block;
+      margin:10px;
+      position:relative;
+      overflow:hidden;
+      transition:0.3s;
+      box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    }
+    .buttons a::after {
+      content:"";
+      position:absolute;
+      top:50%;
+      left:50%;
+      width:300%;
+      height:300%;
+      background:rgba(255,255,255,0.2);
+      transform:translate(-50%,-50%) scale(0);
+      border-radius:50%;
+      transition:0.5s;
+    }
+    .buttons a:hover::after {
+      transform:translate(-50%,-50%) scale(1);
+    }
+    .yellow { background:#FFDD00; color:#000; }
+    .black { background:#000; color:#fff; }
+    .buttons a:hover {
+      transform:translateY(-5px);
+      box-shadow:0 15px 25px rgba(0,0,0,0.5);
+    }
+    /* Floating stars and rocket */
+    .star, .rocket {
+      position:absolute;
+      font-size:1.5rem;
+      animation:float 6s ease-in-out infinite alternate;
+    }
+    .rocket { font-size:2rem; }
+    @keyframes fadeInDown {0% {opacity:0; transform: translateY(-40px);} 100% {opacity:1; transform: translateY(0);}}
+    @keyframes fadeIn {0% {opacity:0;} 100% {opacity:1;}}
+    @keyframes float {0% {transform:translateY(0);} 50% {transform:translateY(-15px);} 100% {transform:translateY(0);}}
+    .orbit {position:absolute; top:50%; left:50%; width:0; height:0; transform-origin:0 0;}
+    .orbit span {display:block; position:absolute; transform:translate(-50%,-50%);}
+    .orbit1 { animation:rotateOrbit 12s linear infinite;}
+    .orbit2 { animation:rotateOrbit 15s linear infinite;}
+    .orbit3 { animation:rotateOrbit 18s linear infinite;}
+    .orbit4 { animation:rotateOrbit 20s linear infinite;}
+    .orbit1 span { left:200px; top:0; } 
+    .orbit2 span { left:180px; top:0; } 
+    .orbit3 span { left:160px; top:0; } 
+    .orbit4 span { left:220px; top:0; font-size:2rem; } 
+    @keyframes rotateOrbit {0%{transform:rotate(0deg);} 100%{transform:rotate(360deg);}}
+  </style>
+</head>
+<body>
+
+  <div class="orbit orbit1"><span class="star">✨</span></div>
+  <div class="orbit orbit2"><span class="star">⭐</span></div>
+  <div class="orbit orbit3"><span class="star">🌟</span></div>
+  <div class="orbit orbit4"><span class="rocket">🚀</span></div>
+
+  <h1>💖 Support My Work</h1>
+  <p>If you enjoy my projects, you can support me to keep building amazing apps and services for the community! 🚀</p>
+
+  <div class="buttons">
+    <a href="https://www.buymeacoffee.com/silask" class="yellow" target="_blank">☕ Buy Me a Coffee</a>
+    <a href="https://github.com/sponsors/Silas-Kipchirchir" class="black" target="_blank">💻 GitHub Sponsors</a>
+  </div>
+
+  <p>Every contribution — big or small — fuels innovation. Thank you! 💙🚀</p>
+
+</body>
+</html>
